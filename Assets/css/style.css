@@ -3,25 +3,21 @@ html,
 body{
     padding: 0;
     margin: 0;
-
-    font-family: poppins, sans-serif;
 }
+/* Latar START */
 .latar{
-    background-image: url('https://preview.redd.it/starry-stage-wallpaper-of-the-anime-bocchi-the-rock-made-by-v0-7i93w9fapf3b1.jpg?width=3840&format=pjpg&auto=webp&s=2a2fcf150960a0082c054ecd004ddcd9aa10e867');
-    /* background-image: url('https://wallpapers.com/images/hd/bocchi-the-rock-characters-train-ride-g98icngc2429boex.jpg'); */
+    background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-pink-background-image_400110349.jpg');
+    /* background-image: url('https://collabo-cafe.com/wp-content/uploads/cadbb15fbe6e5c8c2878027820dfde30.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* Latar END */
 
-.latar .latar-container{
-    background-color: rgba(0, 0, 0, 0.418);
-}
-
-
-/* Navbar START */
+/* Navbar START*/
 nav{
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.325);    
+
 }
 
 nav .container{
@@ -31,8 +27,6 @@ nav .container{
 nav .container ul{
     display: flex;
     justify-content: space-evenly;
-
-    flex-wrap: wrap;
 }
 
 nav .container ul li{
@@ -40,50 +34,108 @@ nav .container ul li{
 }
 
 nav .container ul li .judul{
-    color:  rgb(230,213,123);
-    text-decoration: none;
-    font-weight: 700;    
+
 }
 
-nav .container ul ul li a{
-    color:  rgb(230,213,123);
-    text-decoration: none;
-    padding: 10px;
+nav .container ul li .judul img{
+    min-width: 50px;
+    max-width: 100px;
+
+    object-fit: cover;
 }
-/* Navbar END */
+
+nav .container ul li a{
+    color: yellow;
+    text-decoration: none;
+}
+
+    /* Drop-down START */
+        nav .container ul ul li{
+            display: flex;
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+        }
+    /* Drop-down END */
+/* Navbar END*/
 
 
-
-
-
+/* Hero START */
 .hero{
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+    height: 50vh;
 
-    flex-wrap: wrap;
+    background-image: url('https://otakumobileague.b-cdn.net/wp-content/uploads/2022/11/bocchi-the-rock-anime-trailer-min.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+
+
+    
+
+    text-align: right;
+    align-content: center;
+
+
+
 }
 
 .hero .container{
-    padding: 10px;
+    display: flex;    
+    justify-content: center;
+}
+
+.hero .container  p{
     min-width: 100px;
-
     max-width: 500px;
+    color: yellow;    
+}
+
+/* Hero END */
+
+
+
+/* Karakter START */
+.karakter{
+    width: 100%;
+}
+
+.karakter .container{
+    padding: 10px;
+}
+
+.karakter .container .flex{
+    display: flex;
+    justify-content:stretch;
+
+    justify-content: center;
 
 }
 
-.hero .container p{
+.karakter .container .flex ul{
+    background-color: black;
+    padding: 10px;
+}
+
+.karakter .container .flex ul h2{
     color: white;
-    text-align: right;
-    margin: 10px;
+}
+.karakter .container .flex ul .hitori{
+    background-color: pink;
+}.karakter .container .flex ul .Nijika{
+    background-color: rgb(209, 209, 23)
+}.karakter .container .flex ul .Ryo{
+    background-color: blue;
+}.karakter .container .flex ul .kita{
+    background-color: red;
 }
 
-.hero .container img{
+.karakter .container .flex ul img{
     min-width: 50%;
-
     max-width: 100%;
 
     min-height: 100px;
-    max-height: 500px;
+    max-height: 200px;
 
     object-fit: fill;
 }
+/* Karakter END */
