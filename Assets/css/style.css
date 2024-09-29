@@ -1,0 +1,89 @@
+*,
+html,
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: poppins, sans-serif;
+}
+.latar{
+    background-image: url('https://preview.redd.it/starry-stage-wallpaper-of-the-anime-bocchi-the-rock-made-by-v0-7i93w9fapf3b1.jpg?width=3840&format=pjpg&auto=webp&s=2a2fcf150960a0082c054ecd004ddcd9aa10e867');
+    /* background-image: url('https://wallpapers.com/images/hd/bocchi-the-rock-characters-train-ride-g98icngc2429boex.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.latar .latar-container{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+
+/* Navbar START */
+nav{
+    width: 100%;
+    background-color: black;
+}
+
+nav .container{
+    padding: 10px;
+}
+
+nav .container ul{
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+}
+
+nav .container ul li{
+    list-style-type: none;
+}
+
+nav .container ul li .judul{
+    color:  rgb(230,213,123);
+    text-decoration: none;
+    font-weight: 700;    
+}
+
+nav .container ul ul li a{
+    color:  rgb(230,213,123);
+    text-decoration: none;
+    padding: 10px;
+}
+/* Navbar END */
+
+
+
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.hero .container{
+    padding: 10px;
+    min-width: 100px;
+
+    max-width: 500px;
+
+}
+
+.hero .container p{
+    color: white;
+    text-align: right;
+    margin: 10px;
+}
+
+.hero .container img{
+    min-width: 50%;
+
+    max-width: 100%;
+
+    min-height: 100px;
+    max-height: 500px;
+
+    object-fit: fill;
+}
