@@ -6,12 +6,20 @@ body{
 }
 /* Latar START */
 .latar{
-    background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-pink-background-image_400110349.jpg');
+    background-image: url('https://i.pinimg.com/736x/a5/ff/1f/a5ff1fef058a4b92b39397c4ef6632bf.jpg');
     /* background-image: url('https://collabo-cafe.com/wp-content/uploads/cadbb15fbe6e5c8c2878027820dfde30.jpg'); */
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
+
+    background-position: center;
 }
 /* Latar END */
+
+/* Latar-Container START */
+.latar-container{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+/* Latar-Container END */
 
 /* Navbar START*/
 nav{
@@ -33,8 +41,9 @@ nav .container ul li{
     list-style-type: none;
 }
 
-nav .container ul li .judul{
-
+nav .container ul li .sub-judul{
+    margin-right: 20px;
+    color: white;
 }
 
 nav .container ul li .judul img{
@@ -62,34 +71,34 @@ nav .container ul li a{
 
 /* Hero START */
 .hero{
-    width: 100vw;
-    height: 50vh;
-
-    background-image: url('https://otakumobileague.b-cdn.net/wp-content/uploads/2022/11/bocchi-the-rock-anime-trailer-min.jpg');
-    background-size:contain;
-    background-repeat: no-repeat;
-
-
-    
-
-    text-align: right;
-    align-content: center;
-
-
-
+    width: 100%;
 }
 
 .hero .container{
-    display: flex;    
+    display: flex;
     justify-content: center;
 }
 
-.hero .container  p{
+.hero .container .wrap{
     min-width: 100px;
     max-width: 500px;
+
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.hero .container  .wrap p{
     color: yellow;    
 }
 
+.hero .container .wrap img{
+
+    min-width: 50%;
+    max-width: 100%;
+
+    min-height: 100px;
+    max-height: 500px;
+
+    object-fit: cover;
+}
 /* Hero END */
 
 
@@ -136,6 +145,6 @@ nav .container ul li a{
     min-height: 100px;
     max-height: 200px;
 
-    object-fit: fill;
+    object-fit: cover;
 }
 /* Karakter END */
