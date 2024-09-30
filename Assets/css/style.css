@@ -3,10 +3,12 @@ html,
 body{
     padding: 0;
     margin: 0;
+
+    font-family: poppins;
 }
 /* Latar START */
 .latar{
-    background-image: url('https://i.pinimg.com/736x/a5/ff/1f/a5ff1fef058a4b92b39397c4ef6632bf.jpg');
+    background-image: url('../img/latar/a5ff1fef058a4b92b39397c4ef6632bf.jpg');
     /* background-image: url('https://collabo-cafe.com/wp-content/uploads/cadbb15fbe6e5c8c2878027820dfde30.jpg'); */
     background-size:cover;
     background-repeat: no-repeat;
@@ -21,20 +23,43 @@ body{
 }
 /* Latar-Container END */
 
+
+/* Parent START */
+.parent{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}.parent-container{
+    min-width: 200px;
+    max-width: 600px;
+
+    background-color: rgba(0, 0, 0, 0.548);
+}
+/* Parent END */
+
+
 /* Navbar START*/
 nav{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.325);    
 
+
 }
 
 nav .container{
     padding: 10px;
+
 }
 
 nav .container ul{
     display: flex;
     justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
 nav .container ul li{
@@ -54,9 +79,26 @@ nav .container ul li .judul img{
 }
 
 nav .container ul li a{
-    color: yellow;
+    color: white;
     text-decoration: none;
 }
+
+
+
+    /* Marquee START */
+    nav .container ul ul .marquee li marquee{
+        margin-left: 20px;
+        border-top-right-radius: 20px;
+
+
+        background-color: rgba(243, 19, 19, 0.521);
+        /* background-color: black; */
+
+        height: auto;
+
+    }
+    /* Marquee END */
+
 
     /* Drop-down START */
         nav .container ul ul li{
@@ -65,7 +107,13 @@ nav .container ul li a{
 
             flex-wrap: wrap;
         }
+
+        nav .container ul ul details{
+            margin-right: 5px;
+        }
+
     /* Drop-down END */
+
 /* Navbar END*/
 
 
@@ -75,76 +123,103 @@ nav .container ul li a{
 }
 
 .hero .container{
-    display: flex;
-    justify-content: center;
+    padding: 10px; 
+        /* background-color: #333; */
+
+    text-align: center;    
 }
 
-.hero .container .wrap{
-    min-width: 100px;
-    max-width: 500px;
-
-    background-color: rgba(0, 0, 0, 0.548);
-}
-.hero .container  .wrap p{
-    color: yellow;    
-}
-
-.hero .container .wrap img{
-
+.hero .container img{
     min-width: 50%;
     max-width: 100%;
 
     min-height: 100px;
-    max-height: 500px;
+    max-height: 300px;
 
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.hero .container p{
+    color: white;
+    text-align: center;
+}
+
+.hero .container ul{
+    margin: 10px;
 }
 /* Hero END */
+
+
 
 
 
 /* Karakter START */
 .karakter{
     width: 100%;
+
 }
 
 .karakter .container{
-    padding: 10px;
+display: flex;
+justify-content: center;
 }
 
+.karakter .container h2{
+    color: white;
+}
 .karakter .container .flex{
-    display: flex;
-    justify-content:stretch;
+    min-width: 200px;
+    max-width: 600px;
 
+    background-color: rgba(0, 0, 0, 0.548);
+
+
+}
+
+.karakter .container ul{
+    display: flex;
+    justify-content: space-evenly;
     justify-content: center;
 
 }
 
-.karakter .container .flex ul{
-    background-color: black;
-    padding: 10px;
-}
+    /* List-style-type none */
+        .karakter .container ul .Hitori, .Nijika, .Ryo, .Kita{
+            list-style-type: none;
+        }
+    /* List-style-type none */
 
-.karakter .container .flex ul h2{
-    color: white;
-}
-.karakter .container .flex ul .hitori{
-    background-color: pink;
-}.karakter .container .flex ul .Nijika{
-    background-color: rgb(209, 209, 23)
-}.karakter .container .flex ul .Ryo{
-    background-color: blue;
-}.karakter .container .flex ul .kita{
-    background-color: red;
-}
 
-.karakter .container .flex ul img{
-    min-width: 50%;
-    max-width: 100%;
+    /* Color Personality */
+        .karakter .container ul .Hitori a{
+            color: pink;
+        }.karakter .container ul .Nijika a{
+            color: yellow;
+        }.karakter .container ul .Ryo a{
+            color: blue;
+        }.karakter .container ul .Kita a{
+            color: red;
+        }
+    /* Color Personality */
 
-    min-height: 100px;
-    max-height: 200px;
+    /* Profil */
+        .karakter .container ul .Hitori img{
+            min-width: 50%;
+            max-width: 100%;
 
-    object-fit: cover;
-}
+            object-fit: fill;
+        }.karakter .container ul .Nijika img{
+            min-width: 50%;
+            max-width: 100%;
+            object-fit: fill;
+        }.karakter .container ul .Ryo img{
+            min-width: 50%;
+            max-width: 100%;
+            object-fit: fill;
+        }.karakter .container ul .Kita img{
+            min-width: 50%;
+            max-width: 100%;
+            object-fit: fill;
+        }
+    /* Profil */
 /* Karakter END */
