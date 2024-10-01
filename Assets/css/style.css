@@ -171,16 +171,18 @@ justify-content: center;
     min-width: 200px;
     max-width: 600px;
 
-    background-color: rgba(0, 0, 0, 0.548);
 
 
 }
 
-.karakter .container ul{
+.karakter .container .flex ul{
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
 
+    text-align: center;
+
+    margin: 10px;
 }
 
     /* List-style-type none */
@@ -193,12 +195,30 @@ justify-content: center;
     /* Color Personality */
         .karakter .container ul .Hitori a{
             color: pink;
-        }.karakter .container ul .Nijika a{
+            text-decoration: none;
+        }.karakter .container ul .Hitori a:hover{
+            background-color: pink;
+        }
+
+        .karakter .container ul .Nijika a{
             color: yellow;
-        }.karakter .container ul .Ryo a{
+            text-decoration: none;
+        }.karakter .container ul .Nijika a:hover{
+            background-color: yellow;
+        }
+        
+        .karakter .container ul .Ryo a{
             color: blue;
-        }.karakter .container ul .Kita a{
+            text-decoration: none;
+        }.karakter .container ul .Ryo a:hover{
+            background-color: blue;
+        }
+        
+        .karakter .container ul .Kita a{
             color: red;
+            text-decoration: none;
+        }.karakter .container ul .Kita a:hover{
+            background-color: red;
         }
     /* Color Personality */
 
@@ -206,20 +226,23 @@ justify-content: center;
         .karakter .container ul .Hitori img{
             min-width: 50%;
             max-width: 100%;
-
             object-fit: fill;
+            background-color: pink;
         }.karakter .container ul .Nijika img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
+            background-color: yellow;
         }.karakter .container ul .Ryo img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
+            background-color: blue;
         }.karakter .container ul .Kita img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
+            background-color: red;
         }
     /* Profil */
 /* Karakter END */
