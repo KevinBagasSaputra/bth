@@ -228,21 +228,36 @@ justify-content: center;
             max-width: 100%;
             object-fit: fill;
             background-color: pink;
-        }.karakter .container ul .Nijika img{
+        }   .karakter .container ul .Hitori img:hover{
+                box-shadow: 0 0 10px 1px black;
+            }
+
+        .karakter .container ul .Nijika img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
             background-color: yellow;
-        }.karakter .container ul .Ryo img{
+        }   .karakter .container ul .Nijika img:hover{
+            box-shadow: 0 0 10px 1px black;
+        }
+        
+        .karakter .container ul .Ryo img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
             background-color: blue;
-        }.karakter .container ul .Kita img{
+        }   .karakter .container ul .Ryo img:hover{
+            box-shadow: 0 0 10px 1px black;
+        }
+        
+
+        .karakter .container ul .Kita img{
             min-width: 50%;
             max-width: 100%;
             object-fit: fill;
             background-color: red;
+        }   .karakter .container ul .Kita img:hover{
+            box-shadow: 0 0 10px 1px black;
         }
     /* Profil */
 /* Karakter END */
