@@ -44,8 +44,8 @@ body{
 nav{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.325);    
-
-
+    position: sticky;
+    top: 0;
 }
 
 nav .container{
@@ -71,18 +71,26 @@ nav .container ul li .sub-judul{
     color: white;
 }
 
-nav .container ul li .judul img{
+/* nav .container ul li .judul img{
     min-width: 50px;
     max-width: 100px;
 
     object-fit: cover;
-}
+} */
 
 nav .container ul li a{
     color: white;
     text-decoration: none;
+}nav .container ul li a:hover{
+    transition: all ease-in-out 620ms;
+    text-decoration: underline red;
+    /* text-shadow: 2px 0 2px yellow; */
 }
 
+nav .container ul li .judul{
+    color: white;
+    font-size: 1.2em;
+}
 
 
     /* Marquee START */
@@ -109,7 +117,11 @@ nav .container ul li a{
         }
 
         nav .container ul ul details{
+            color: red;
             margin-right: 5px;
+        }nav .container ul ul details ul{
+            background-color: black;
+            color: white;
         }
 
     /* Drop-down END */
@@ -127,6 +139,12 @@ nav .container ul li a{
         /* background-color: #333; */
 
     text-align: center;    
+}
+
+.hero .container h2{
+    color: white;
+    background-color: rebeccapurple;
+    
 }
 
 .hero .container img{
@@ -164,15 +182,13 @@ display: flex;
 justify-content: center;
 }
 
-.karakter .container h2{
+.karakter .container .flex h2{
     color: white;
+    background-color: rebeccapurple;
 }
 .karakter .container .flex{
     min-width: 200px;
     max-width: 600px;
-
-
-
 }
 
 .karakter .container .flex ul{
@@ -229,6 +245,7 @@ justify-content: center;
             object-fit: fill;
             background-color: pink;
         }   .karakter .container ul .Hitori img:hover{
+                z-index: 1;
                 box-shadow: 0 0 10px 1px black;
             }
 
@@ -238,6 +255,7 @@ justify-content: center;
             object-fit: fill;
             background-color: yellow;
         }   .karakter .container ul .Nijika img:hover{
+            z-index: 1;
             box-shadow: 0 0 10px 1px black;
         }
         
@@ -247,6 +265,7 @@ justify-content: center;
             object-fit: fill;
             background-color: blue;
         }   .karakter .container ul .Ryo img:hover{
+            z-index: 1;
             box-shadow: 0 0 10px 1px black;
         }
         
@@ -257,7 +276,13 @@ justify-content: center;
             object-fit: fill;
             background-color: red;
         }   .karakter .container ul .Kita img:hover{
+            z-index: 1;
             box-shadow: 0 0 10px 1px black;
         }
     /* Profil */
+
+
+    .karakter .container .flex ul li{
+        margin: 10px;
+    }
 /* Karakter END */
