@@ -8,7 +8,7 @@ body{
 }
 /* Latar START */
 .latar{
-    background-image: url('../img/latar/a5ff1fef058a4b92b39397c4ef6632bf.jpg');
+    background-image: url('../img/latar/latar.jpg');
     /* background-image: url('https://collabo-cafe.com/wp-content/uploads/cadbb15fbe6e5c8c2878027820dfde30.jpg'); */
     background-size:cover;
     background-repeat: no-repeat;
@@ -142,6 +142,7 @@ nav .container ul li .judul{
 }
 
 .hero .container h2{
+    font-size: 1.25em;
     color: white;
     background-color: rebeccapurple;
     
@@ -183,6 +184,8 @@ justify-content: center;
 }
 
 .karakter .container .flex h2{
+    font-size: 1.25em;
+
     color: white;
     background-color: rebeccapurple;
 }
@@ -286,3 +289,38 @@ justify-content: center;
         margin: 10px;
     }
 /* Karakter END */
+
+
+
+
+
+
+/* About START */
+.about{
+    width: 100%;
+}
+
+.about .container{
+    padding: 10px;
+}
+
+.about .container h2{
+    color: white;
+    background-color: rebeccapurple;
+}
+
+.about .container ul{
+    display: flex;
+
+}
+
+.about .container ul li{
+    margin: 10px;
+}
+
+    /* Text Color */
+    .about .container ul li p{
+        color: white;
+    }
+    /* Text Color */
+/* About END */
